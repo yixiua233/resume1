@@ -1,0 +1,245 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+body{
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url('../../dict/images/growing.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    /* flex-direction: column; */
+  }
+
+.left_container {
+    width: 200px;
+    height: 300px;
+    background-color: rgba(255, 255, 255, 0.5); /* 白色背景，透明度50% */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    margin-right: 50px;
+    margin-left: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* 添加阴影效果 */
+    color: #000; /* 侧边栏文字颜色设为黑色 */
+}
+
+.btn {
+    padding: 15px; /* 边距 */
+    margin: 5px;
+    color: #000; /* 按钮文本颜色设为黑色 */
+    text-align: center;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    background-color: rgba(255, 255, 255, 0.5); /* 白色按钮背景，透明度50% */
+    border: none; /* 移除边框 */
+    border-radius: 5px; /* 添加圆角 */
+}
+
+/* Hover effect on buttons */
+.btn:hover {
+    background-color: rgba(255, 255, 255, 0.7); /* 悬停时颜色稍微不透明 */
+}
+
+
+
+.right_container{
+    position: relative;
+    width: 70%;
+    height: 750px;
+    background-color: rgba(51, 51, 51, 0.8);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    margin: 20px 20px 50px 20px;
+}
+
+.right_present_professional,
+.right_present_research,
+.right_present_inschool,
+.right_present_kaggle {
+    position: absolute;
+    top: 30px;
+    left: 50px;
+    right: 50px;
+    bottom: 50px;
+    padding: 20px; /* Add padding for spacing */
+    display: none;
+    box-sizing: border-box; /* Include padding in the total width */
+    max-height: 800px;
+    overflow-y: auto; 
+}
+
+.right_present_professional.active,
+.right_present_research.active,
+.right_present_inschool.active,
+.right_present_kaggle.active {
+    display: block;
+}
+
+.card {
+    position: relative;
+    color: #fff;
+    /* justify-content: center; */
+}
+
+.card h1{
+    font-size: 32px;
+    font-weight: 400;
+    margin-top: 10px;
+}
+
+.card h2{
+    font-size: 20px;
+    font-weight: 200;
+    margin-bottom: 20px;
+}
+
+.card p{
+    font-size: 18px;
+    font-weight: 200;
+    margin-bottom: 25px;
+}
+
+.stacking_img {
+    position: relative;
+    text-align: center;
+}
+
+.stacking_img img {
+    top: 50%;
+    left: 50%;
+    width: 70%;
+    height: 70%;
+}
+
+.stacking_img p {
+    /* 用于占据空间，以避免文本与图片重叠 */
+    margin: 0;
+}
+
+.return {
+    position: relative;
+    display: flex;
+    margin: 850px 0 0 0;
+}
+
+a:link {
+    color: #fff;
+}
+
+a:visited{
+    color: #fff;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url('../../dict/images/growing.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.left_container {
+    width: 200px;
+    height: 300px;
+    background-color: rgba(255, 255, 255, 0.5); /* 白色背景，透明度50% */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    margin-right: 50px;
+    margin-left: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* 添加阴影效果 */
+}
+
+.btn {
+    padding: 15px; /* 边距 */
+    margin: 5px;
+    color: #fff; /* 保持按钮文本颜色为白色 */
+    text-align: center;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    background-color: rgba(255, 255, 255, 0.5); /* 白色按钮背景，透明度50% */
+    border: none; /* 移除边框 */
+    border-radius: 5px; /* 添加圆角 */
+}
+
+/* Hover effect on buttons */
+.btn:hover {
+    background-color: rgba(255, 255, 255, 0.7); /* 悬停时颜色稍微不透明 */
+}
+
+.right_container {
+    position: relative;
+    width: 70%;
+    height: 750px;
+    background-color: rgba(255, 255, 255, 0.5); /* 白色背景，透明度50% */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    margin: 20px 20px 50px 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* 添加阴影效果 */
+}
+
+.card {
+    position: relative;
+    color: #2e2e2e; /* 深色文本提升对比度 */
+}
+
+.card h1 {
+    font-size: 28px; /* 标题字体大小 */
+    font-weight: 500;
+    margin-top: 10px;
+}
+
+.card h2 {
+    font-size: 18px; /* 副标题字体大小 */
+    font-weight: 300;
+    margin-bottom: 20px;
+}
+
+.card p {
+    font-size: 16px; /* 段落字体大小 */
+    font-weight: 300;
+    margin-bottom: 25px;
+}
+
+.stacking_img img {
+    top: 50%;
+    left: 50%;
+    width: 70%;
+    height: 70%;
+}
+
+.return {
+    position: relative;
+    display: flex;
+    margin: 850px 0 0 0;
+}
+
+a:link,
+a:visited {
+    color: #2e2e2e; /* 链接颜色 */
+    text-decoration: none; /* 移除下划线 */
+}

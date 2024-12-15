@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>PRACTICE</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="game_index.css" />
+    <script src="index.js"></script>
+    <style>
+        /* 添加样式用于弹窗 */
+        .modal {
+            display: none;
+            position: fixed;
+            z-index: 1;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            overflow: auto;
+            background-color: rgb(0,0,0);
+            background-color: rgba(0,0,0,0.4);
+            padding-top: 60px;
+        }
+        .modal-content {
+            background-color: #fefefe;
+            margin: 5% auto;
+            padding: 20px;
+            border: 1px solid #888;
+            width: 80%;
+        }
+        .close {
+            color: #aaa;
+            float: right;
+            font-size: 28px;
+            font-weight: bold;
+        }
+        .close:hover,
+        .close:focus {
+            color: black;
+            text-decoration: none;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="left_container">
+        <div class="btn prof" onclick="showContent('professional')">
+            <h3>实践活动</h3>
+        </div>
+        <div class="btn research" onclick="showContent('research')">
+            <h3>科研竞赛</h3>
+        </div>
+    </div>
+    <div class="right_container">
+        <div class="right_present_professional content">
+            <div class="card">
+                <h1>镇江市福瑞康养老院</h1>
+                <hr />
+                <h2>2021.8</h2>
+                <p></p>
+            </div>
+
+            <div class="stacking_img">
+                <img src="../../dict/images/shehuishijian.jpg" alt="镇江市福瑞康养老院" onclick="openModal('镇江市福瑞康养老院的图片介绍')">
+                <p></p>
+            </div>
+
+            <div class="card">
+                <h1>江西省吉安市曲濑镇长乐小学支教活动</h1>
+                <hr />
+                <h2>2022.8</h2>
+                <p></p>
+            </div>
+
+            <div class="stacking_img">
+                <img src="../../dict/images/zhijiao.jpg" alt="支教活动" onclick="openModal('江西省吉安市曲濑镇长乐小学支教活动的图片介绍')">
+                <p></p>
+            </div>
+        </div>
+
+        <div class="right_present_research content">
+            <div class="card">
+                <h1>江苏省第九届工业工程致善大赛</h1>
+                <hr />
+                <h2>2022.10</h2>
+                <p></p>
+            </div>
+
+            <div class="stacking_img">
+                <img src="../../dict/images/zhishan.jpg" alt="致善大赛" onclick="openModal('江苏省第九届工业工程致善大赛的图片介绍')">
+                <p></p>
+            </div>
+
+            <div class="card">
+                <h1>哈佛大学企业战略管理海外线上短期交流项目</h1>
+                <hr />
+                <h2>2021.12</h2>
+                <p></p>
+            </div>
+
+            <div class="stacking_img">
+                <img src="../../dict/images/haiwaixuexi.jpg" alt="企业战略管理" onclick="openModal('哈佛大学企业战略管理海外线上短期交流项目的图片介绍')">
+                <p></p>
+            </div>
+        </div>
+    </div>
+
+    <!-- 创建弹窗 -->
+    <div id="myModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <p id="modal-description"></p>
+        </div>
+    </div>
+
+    <script>
+        function openModal(description) {
+            document.getElementById("modal-description").innerText = description;
+            document.getElementById("myModal").style.display = "block";
+        }
+
+        function closeModal() {
+            document.getElementById("myModal").style.display = "none";
+        }
+
+        window.onclick = function(event) {
+            if (event.target === document.getElementById("myModal")) {
+                closeModal();
+            }
+        }
+    </script>
+</body>
+</html>

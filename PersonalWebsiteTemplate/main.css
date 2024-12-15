@@ -1,0 +1,198 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  min-height: 100vh;
+  min-width: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url('./dict/images/orange.jpg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.text-intro {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-left: 20px;
+  margin-right: 20px;
+  
+  justify-content: center;
+  flex-wrap: wrap;
+  z-index: 1;
+}
+
+.text-intro .intro h1{
+  text-align: justify;
+  font-size: 40px;
+  color: #fff;
+  font-weight: 300;
+  /* margin: 20px 20px 0 20px; */
+}
+
+.text-intro .intro h2{
+  text-align: justify;
+  font-size: 28px;
+  color: #fff;
+  font-weight: 200;
+  margin-bottom: 30px;
+  /* margin: 20px 20px 0 20px; */
+}
+
+.text-intro .author h3{
+  text-align: justify;
+  font-size: 20px;
+  color: #fff;
+  font-weight: 100;
+  margin-bottom: 5px;
+  /* margin: 20px 20px 0 20px; */
+}
+
+.text-intro .author p{
+  text-align: justify;
+  font-size: 15px;
+  color: #fff;
+  font-weight: 100;
+  margin-bottom: 5px;
+  /* margin: 20px 20px 0 20px; */
+}
+
+.container{
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  z-index: 1;
+  /* margin-top: 100px; */
+}
+
+.container .card{
+  position: relative;
+  width: 280px;
+  height: 400px;
+  background-color: rgba(255, 255,255,0.1);
+  margin: 30px;
+  border-radius: 15px;
+  box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-top: 1px solid rgba(255, 255, 255,0.5);
+  border-left: 1px solid rgba(255, 255, 255,0.5);
+  backdrop-filter: blur(5px);
+}
+
+.container .card .content{
+  padding: 20px;
+  text-align: center;
+}
+
+/* .container .card .content .hov{
+  transform: translateY(100px);
+  opacity: 0;
+  transition: 0.5s;
+} */
+
+/* .container .card:hover .content .hov{
+  transform: translateY(0);
+  opacity: 1;
+} */
+
+.container .card .content h3{
+  font-size: 40px;
+  color: #fff;
+  margin-top: -20px;
+}
+
+.container .card .content p{
+  text-align: justify;
+  font-size: 18px;
+  color: #fff;
+  font-weight: 300;
+  margin: 20px 20px 0 20px;
+}  
+
+.container .card .content a{
+  position: relative;
+  display: inline-block;
+  padding: 8px 20px;
+  margin-top: 15px;
+  background-color: #fff;
+  color: #000;
+  text-decoration: none;
+  border-radius: 20px;
+  font-weight: 500;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+footer {
+    position: fixed; /* 或者使用 absolute 进行适当定位 */
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    text-align: center; /* 使内容居中 */
+    font-size: 8px; /* 修改为你希望的字体大小 */
+    color: white;    /* 字体颜色设置为白色 */
+}
+/* 现有 CSS 代码开始 */
+
+/* 原有的样式代码... */
+
+/* 添加平滑的过渡效果 */
+.container .card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* 添加过渡效果 */
+}
+
+.container .card:hover {
+  transform: scale(1.05); /* 悬停时稍微放大 */
+  box-shadow: 30px 30px 70px rgba(0, 0, 0, 0.7); /* 悬停时增加阴影 */
+}
+
+/* 添加渐变效果 */
+.container .card {
+  background: linear-gradient(145deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.2)); /* 渐变背景 */
+}
+
+
+
+.container .card:hover .content {
+  opacity: 1; /* 悬停时增加不透明度 */
+}
+
+/* 动态按钮效果 */
+.container .card .content a {
+  transition: background-color 0.3s ease, transform 0.2s; /* 添加过渡效果 */
+}
+
+.container .card .content a:hover {
+  background-color: #f0a500; /* 悬停时变色 */
+  transform: translateY(-3px); /* 上移效果 */
+}
+
+/* 添加滚动动画 */
+@keyframes slideIn {
+  from {
+    transform: translateY(20px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.text-intro, .container {
+  animation: slideIn 0.5s ease forwards; /* 加载时滑入动画 */
+}
+
+/* 现有 CSS 代码结束 */
+
+

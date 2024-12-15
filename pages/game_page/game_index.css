@@ -1,0 +1,307 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+body{
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url('../../dict/images/green and bird.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    /* flex-direction: column; */
+  }
+
+.left_container {
+    width: 200px;
+    height:500px;
+    background-color: rgba(255, 255, 255, 0.5); /* 白色50%透明度 */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    margin: 0 50px 0 20px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* 添加阴影效果 */
+    padding: 20px; /* 增加内边距 */
+
+}
+
+.btn {
+    padding: 15px 20px; /* 设置内边距，使按钮更大 */
+    margin: 5px;
+    color: #333; /* 修改为深色文字 */
+    text-align: center;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease; /* 添加缩放效果 */
+    border: 1px solid #fff; /* 添加边框 */
+    border-radius: 5px; /* 圆角边框 */
+}
+
+/* Hover effect on buttons */
+.btn:hover {
+    background-color: #555; /* Change the background color on hover */
+}
+
+.right_container{
+    position: relative;
+    width: 70%;
+    height: 750px;
+    background-color: rgba(51, 51, 51, 0.8);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    margin: 20px 20px 50px 20px;
+}
+
+.right_present_professional,
+.right_present_research,
+.right_present_inschool {
+    position: absolute;
+    top: 30px;
+    left: 50px;
+    right: 50px;
+    bottom: 50px;
+    padding: 20px; /* Add padding for spacing */
+    display: none;
+    box-sizing: border-box; /* Include padding in the total width */
+    max-height: 800px;
+    overflow-y: auto; 
+}
+
+.right_present_professional.active,
+.right_present_research.active,
+.right_present_inschool.active {
+    display: block;
+}
+
+.card {
+    color: #fff;
+}
+
+.card h1{
+    font-size: 32px;
+    font-weight: 400;
+    margin-top: 10px;
+}
+
+.card h2{
+    font-size: 20px;
+    font-weight: 200;
+    margin-bottom: 20px;
+}
+
+.card p{
+    font-size: 18px;
+    font-weight: 200;
+    margin-bottom: 25px;
+}
+
+.return {
+    position: relative;
+    display: flex;
+    margin: 850px 0 0 0;
+}
+
+a:link {
+    color: #fff;
+}
+
+a:visited{
+    color: #fff;
+}
+
+.mall_video{
+    position: relative;
+    margin-left: 200px;
+    margin-right: 200px;
+}
+<style>
+    .stacking_img img {
+        width: 300px; /* 设置宽度 */
+        height: auto; /* 保持比例 */
+    }
+</style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url('../../dict/images/green and bird.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+/* 左侧容器 */
+.left_container {
+    width: 200px;
+    height: 250px;
+    background-color: rgba(255, 255, 255, 0.5); /* 修改为白色50%透明度 */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    margin: 0 50px 0 20px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* 添加阴影效果 */
+}
+
+/* 按钮样式 */
+.btn {
+    padding: 20px;
+    margin: 5px;
+    color: #333; /* 修改为深色文字 */
+    text-align: center;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease; /* 添加缩放效果 */
+    border: 1px solid #fff; /* 添加边框 */
+    border-radius: 5px; /* 圆角边框 */
+}
+
+/* 按钮悬停效果 */
+.btn:hover {
+    background-color: rgba(255, 255, 255, 0.8); /* 修改悬停背景色 */
+    transform: scale(1.05); /* 添加缩放效果 */
+}
+
+/* 右侧容器 */
+.right_container {
+    position: relative;
+    width: 70%;
+    height: 750px;
+    background-color: rgba(255, 255, 255, 0.5); /* 修改为白色50%透明度 */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 10px; /* 添加圆角 */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* 内容展示部分 */
+.right_present_professional,
+.right_present_research,
+.right_present_inschool {
+    position: absolute;
+    top: 30px;
+    left: 50px;
+    right: 50px;
+    bottom: 50px;
+    padding: 20px;
+    display: none;
+    box-sizing: border-box;
+    max-height: 800px;
+    overflow-y: auto;
+    background-color: rgba(255, 255, 255, 0.7); /* 背景颜色稍深 */
+    border-radius: 10px; /* 圆角 */
+}
+
+.right_present_professional.active,
+.right_present_research.active,
+.right_present_inschool.active {
+    display: block;
+}
+
+/* 卡片样式 */
+.card {
+    color: #333; /* 修改为深色文字 */
+}
+
+.card h1 {
+    font-size: 32px;
+    font-weight: 400;
+    margin-top: 10px;
+}
+
+.card h2 {
+    font-size: 20px;
+    font-weight: 200;
+    margin-bottom: 20px;
+}
+
+.card p {
+    font-size: 18px;
+    font-weight: 200;
+    margin-bottom: 25px;
+}
+
+/* 返回按钮样式 */
+.return {
+    position: relative;
+    display: flex;
+    margin: 850px 0 0 0;
+}
+
+/* 链接样式 */
+a:link,
+a:visited {
+    color: #333; /* 修改为深色文字 */
+}
+
+/* 视频容器 */
+.mall_video {
+    position: relative;
+    margin: 200px;
+}
+
+/* 图片样式 */
+.stacking_img img {
+    width: 300px; /* 设置宽度 */
+    height: auto; /* 保持比例 */
+    border-radius: 10px; /* 添加圆角 */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* 添加阴影效果 */
+}
+.modal {
+    display: none; /* 隐藏弹窗 */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+}
+
+.modal-content {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+}
+
+#caption {
+    margin: auto;
+    display: block;
+    text-align: center;
+    color: #ccc;
+    padding: 10px 0;
+    height: 150px;
+}
+
+.close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #fff;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+

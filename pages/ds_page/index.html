@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- Title of this subpage-->>
+    <title>STUDY Island</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="ds_index.css" />
+    <script src="index.js"></script>
+</head>
+    <body>
+        <!-- Content on the left, 4 MAXIMUM-->
+        <div class="left_container">
+            <div class="btn kaggle" onclick="showContent('kaggle')">
+                <!-- Edit your own categories here-->
+                <h3>个人信息</h3>
+            </div>
+            <div class="btn prof" onclick="showContent('professional')">
+                <h3>学业成绩</h3>
+            </div>
+            <div class="btn research" onclick="showContent('research')">
+                <h3>个人荣誉成就</h3>
+            </div>
+            <div class="btn inschool" onclick="showContent('inschool')">
+                <h3>集体荣誉成就</h3>
+            </div>
+            
+        </div>
+        <div class="right_container">
+            <!-- Detailed information of the first category -->
+            <div class="right_present_professional content">
+                <div class="card">
+                    <h1>绩点情况</h1>
+                    <h2>总绩点：3.30</h2>
+                    <p>总体成绩在专业前15%，其中2021年专业第二
+                    </p>
+                </div>
+                <hr /> <!-- Horizontal line separator -->
+                <div class="card">
+                    <h1>奖学金</h1>
+                    <h2>2020-2024</h2>
+                    <p>三次获得学业优秀奖学金三等奖
+                        三次获得国家励志奖学金
+                        2024年获得工业98级学业奖学金
+                    </p>
+                </div>
+                <hr /> <!-- Horizontal line separator -->
+                <div class="card">
+                    <h1>学习科目</h1>
+                    <h2>专业课</h2>
+                    <p>生产计划与控制、质量管理与可靠性、设施规划与物流系统设计、基础工业工程、人因工程学、采购管理、物流与供应链管理、服务运作管理、安全工程
+
+                    </p>
+                </div>
+            </div>
+
+            <!-- Detailed information of the second category -->
+
+            <div class="right_present_research content">
+                <div class="card">
+                    <h1>2020-2024总荣誉</h1>
+                    <h2>--------------------------------------</h2>
+                    <p>江苏大学工业工程2001团支部书记，获得江苏大学优秀共青团干部、江苏大学优秀共青团员、江苏大学管理学院优秀共青团干部等多项荣誉。
+                    </p>
+                </div>
+                <hr />
+                <div class="card">
+                    <h1>2020-2021年度</h1>
+                    <h2>--------------------------------------</h2>
+                    <p>江苏大学管理学院组织部成员
+                    </p>
+                </div>
+                <hr />
+                <div class="card">
+                    <h1>2021-2022年度</h1>
+                    <h2>--------------------------------------</h2>
+                    <p>江苏大学学生管理处楼栋负责人，负责疫情期间楼栋人员调度及工作协调组织
+                    </p>
+                </div>
+                <hr />
+                <div class="card">
+                    <h1>2022-2023年度</h1>
+                    <h2>--------------------------------------</h2>
+                    <p>江苏大学管理学院工业2001暑期社会实践活动负责人，带领小组成员多次获得先进个人奖励
+                    </p>
+                </div>
+                <hr />
+            </div>
+
+            <!-- Detailed information of the third category -->
+            <div class="right_present_inschool content">
+                <div class="card">
+                    <h1>2021.12</h1>
+                    <h2>江苏大学管理学院</h2>
+                    <p>院级“一二九”大合唱二等奖
+                    </p>
+                </div>
+                <hr />
+                <div class="card">
+                    <h1>2022.5</h1>
+                    <h2>江苏大学管理学院</h2>
+                    <p>院级广播体操大赛一等奖
+                    </p>
+                </div>
+                <hr />
+                <div class="card">
+                    <h1>2023.10</h1>
+                    <h2>江苏大学</h2>
+                    <p>大眼睛公益支教社团获江苏大学“十佳社团”称号
+                    </p>
+                </div>
+                <hr />
+            </div>
+
+            <!-- Detailed information of the third category -->
+            <div class="right_present_kaggle content">
+                <div class="card">
+                    <div class="card">
+                        <h1>个人信息</h1>
+                        <h2>2020.9-2024.6  江苏大学</h2>
+                        <p>专业：工业工程与管理
+                        </p>
+                    </div>
+                    
+                    <!-- Insert Image here. Remove it if not needed -->
+                    <div class="stacking_img">
+                        <img src="../../dict/images/personal.jpg" alt="Process of Stacking">
+                        <p> </p>
+                    </div>
+
+                </div>
+                <hr />
+            </div>
+            
+            <!-- Return to the main page -->
+            <div class="return">
+                <div class="btn ds_to_home">
+                    <a href="../../index.html">
+                        <h2>Return</h2>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <script>
+            // Initialize with 'Professional' content displayed
+            showContent('professional');
+        </script>
+    </body>
+</html>
